@@ -2,12 +2,13 @@
 #include <math.h>
 using namespace std;
 
+
+    int pl(int B, int C){
     float x, S=0;
     double const pi=3.14159265359;
-    int pl(int A, int N){
-    x=tan(pi/N);
-    S=(A*A*N)/(4*x);
-    cout<<"Площадь "<<N<<"-угольника со стороной "<<A<<" равна "<<S<<endl;
+    x=tan(pi/C);
+    S=(B*B*C)/(4*x);
+    cout<<"Площадь "<<C<<"-угольника со стороной "<<B<<" равна "<<S<<endl;
     }
     int main() {
     setlocale(LC_ALL, "Russian");
