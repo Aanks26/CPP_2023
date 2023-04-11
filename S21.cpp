@@ -10,7 +10,7 @@ using namespace std;
     printf("Введите число B (оно должно быть больше числа A): ");
     scanf("%d", &B);
     ofstream out;
-    out.open("hui.txt");
+    out.open("output.txt");
     for (int i=A; i<=B; ++i){
     out<<i*3<<endl;
     }
