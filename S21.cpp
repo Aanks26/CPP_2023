@@ -9,6 +9,9 @@ using namespace std;
     scanf("%d", &A);
     printf("Введите число B (оно должно быть больше числа A): ");
     scanf("%d", &B);
+    if (B<A){
+        printf("Число A больше числа B");
+    }
     ofstream out;
     out.open("output.txt");
     for (int i=A; i<=B; ++i){
