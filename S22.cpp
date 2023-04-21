@@ -8,8 +8,7 @@ using namespace std;
     int n=1, b;
        while(file>>b){
 	   cout<<n<<". "<<b<<endl;
-	   ++n;
-  }
+	   ++n;}
     file.close();
     return 0;
 
