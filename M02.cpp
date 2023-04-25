@@ -8,7 +8,8 @@ int pl(int B, int C){
         x=tan(pi/C);
         S=(B*B*C)/(4*x);
         cout<<"Площадь "<<C<<"-угольника со стороной "<<B<<" равна "<<S<<endl;
-    return S;}
+    return S;
+}
 
 int main(){
     setlocale(LC_ALL, "Russian");
