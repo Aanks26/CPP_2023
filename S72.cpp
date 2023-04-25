@@ -8,9 +8,9 @@ public:
     float Balance;
 
     CreditCard(int n, int b);
-    int Put(int v);
-    int Take(int v);
-    int show_balance();
+    void Put(int v);
+    void Take(int v);
+    void show_balance();
 };
 
 CreditCard::CreditCard(int n, int b){
@@ -18,17 +18,18 @@ CreditCard::CreditCard(int n, int b){
     Number=n;   Balance=b;
 }
 
-CreditCard::Put(int v){
-    Balance=Balance+v;
+void CreditCard::Put(int v){
+
+Balance=Balance+v;
     cout<<"Операция пополнения проведена. Текущий баланс карты: "<<Balance<<endl;
 }
 
-CreditCard::Take(int v){
+void CreditCard::Take(int v){
     Balance=Balance-v;
     cout<<"Операция снятия проведена. Текущий баланс карты: "<<Balance<<endl;
 }
 
-CreditCard::show_balance(){
+void CreditCard::show_balance(){
     cout<<"Текущая карта: "<<Number<<endl;
     cout<<"Текущий баланс: "<<Balance<<endl;
 }
@@ -50,7 +51,8 @@ int Transfer(CreditCard C1, CreditCard C2, int V){
 };
     int main() {
         setlocale(LC_ALL, "Russian");
-        CreditCard cc1 (5032, 500);
+        CreditCard cc1 (5032, 20);
         CreditCard cc2 (2305, 500);
         Transfer (cc1, cc2, 300);
 }
+
