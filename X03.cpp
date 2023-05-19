@@ -8,7 +8,7 @@ private:
     double Prise;
 
 public:
-    double balance_bonus;
+    double balance_bonus=0;
 
     Item(string N, int p);
     double bonus();
